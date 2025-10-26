@@ -1,0 +1,24 @@
+
+{
+  // --- General ---
+  "python.analysis.exclude": ["**/venv", "**/.venv"],
+
+  // --- Use Ruff for linting ---
+  "python.linting.enabled": true,
+  "python.linting.ruffEnabled": true,
+
+  // --- Use Ruff for formatting ---
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnSave": true,
+
+  // --- Optional: organize imports automatically ---
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+
+  // --- Optional: use Ruff explicitly for fixes ---
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true,
+    "python.languageServer": "Pylance",
+}
